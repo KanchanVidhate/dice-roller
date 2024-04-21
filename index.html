@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice</title>
+</head>
+<body>
+    <h2>Dice Roller</h2>
+    <img src="./img/default.png"class="dice-img" alt="Dice" id="dice-img">
+    <button type="button" class="btn" onclick="rollDice()">START</button>
+    <script>
+
+            function rollDice()
+              const min = 1;
+              const max = 6;
+
+              const randomNumber = Math.round(Math.random()*(max-min)=min);
+              const imgObject = document.getElementById('dice-img');
+
+            switch(randomNumber)
+            {
+                case 1 :
+                    imgObject.src= "./img/1.png";
+                    break;
+            
+                case 2:imgObject.src= "./img/2.png";
+                 break;
+                case 3 :imgObject.src="./img/3png" ;
+                  break;
+                case 4 :imgObject.src ="./img/4.png";
+                  break;
+               case 5:   imgObject.src = "./img/5.png";
+                  break;
+               case 6: imgObject.src=imgObject.src ="./img/6.png";
+                  break;
+              default:imgObject.src ="./img/default.png";
+
+            }
+
+
+    </script>
+
+
+</body>
+</html>
